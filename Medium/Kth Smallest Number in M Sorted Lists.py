@@ -15,9 +15,7 @@ Output: 7
 Explanation: The 3rd smallest number among all the arrays is 7.
 
 
-Since we only consider top K elememts of the heap, the time complexity will be O(Log K) and we also scan all the element of all the array so complexity will be O(M)
-Overall Complexity will be = O(M Log K)
-
+Since we’ll be going through at most ‘K’ elements among all the arrays, and we will remove/add one element in the heap in each step, the time complexity of the above algorithm will be O(K*logM)O(K∗logM) where ‘M’ is the total number of input arrays.
 ***
 
 
